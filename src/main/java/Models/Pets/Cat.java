@@ -22,6 +22,10 @@ public class Cat extends Pet {
         return species;
     }
 
+    public void setSpecies(String species) {
+        this.species = species;
+    }
+
     @Override
     public List<String> getListOfCommands() {
         return listOfCommands;
