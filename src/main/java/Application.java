@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Application {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Load pet nursery from file? y/n");
+        System.out.println("\nLoad pet nursery from file? y/n");
         if (scanner.next().equals("y")) {
             new Controller(1);
         } else {
