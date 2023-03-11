@@ -56,11 +56,10 @@ public class UserMenuCommands {
                 if (true) {
                     // if (animalList.get(positionAnimalToAnimalList).getClass().toString().contains("Cat")) {
                     MenuTemplates.printMenuBody(
-                            "1 - name\n" +
+                            "1 - name \n" +
                                     "2 - birthday \n" +
-                                    "3 - Species.\n" +
-                                    "4 - Commands.\n" +
-                                    "5 - Exit to main menu...");
+                                    "3 - Commands\n" +
+                                    "4 - Exit to main menu...");
                     MenuTemplates.printMenuLine();
 
                     userSelection = scanner.next();
@@ -73,12 +72,7 @@ public class UserMenuCommands {
                         birthday = inputBirthdayOfAnimal();
                         animalList.get(positionAnimalToAnimalList).setBirthday(birthday);
                         System.out.println("birthday changed \n");
-                    } else if (userSelection.equals("3")) {
-                        System.out.println("Input species: ");
-                        String species = scanner.next();
-
-
-                    } else if (userSelection.equals("4")) {
+                    }  else if (userSelection.equals("3")) {
                         System.out.println("Input command for the pet: ");
                         command = scanner.next();
                         System.out.println("Do yoy want to add the command to the list or  overwrite list of commands for the pet?");
@@ -95,7 +89,7 @@ public class UserMenuCommands {
                             break;
 
                         }
-                    } else if (userSelection.equals("5")) {
+                    } else if (userSelection.equals("4")) {
                         break;
                     } else {
                         System.out.println("input error, repeat the input");

@@ -1,7 +1,6 @@
 package View;
 
 import Models.Nursery;
-import Repository.LoadFromFile;
 import Repository.WriteToFile;
 
 import java.io.IOException;
@@ -19,7 +18,6 @@ public class UserMenuConsole {
     }
 
 
-
     /**
      * method of user interaction with the main menu
      **/
@@ -35,8 +33,8 @@ public class UserMenuConsole {
                             "3 - Add new command for the pet.\n" +
                             "4 - Change data of the pet from nursery.\n" +
                             "5 - Delete pet from nursery.\n" +
-                            "6 - Exit without overwriting of the nursery data file \n" +
-                            "7 - Exit and overwrite the nursery data file ");
+                            "6 - Exit without saving data changes to file \n" +
+                            "7 - Exit with saving data changes to file ");
             MenuTemplates.printMenuLine();
 
 
@@ -61,14 +59,13 @@ public class UserMenuConsole {
 
             } else if (userSelection.equals("7")) {
                 WriteToFile file = new WriteToFile();
-
                 file.writeToFile(nursery);
                 System.out.println("All changes are saved in the file\nProgram completed");
 
                 break;
 
 
-            }else {
+            } else {
                 MenuTemplates.printResponseTemplate("Error! Input correct value!");
 
             }
