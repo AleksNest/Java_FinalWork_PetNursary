@@ -33,7 +33,7 @@ public class UserMenuConsole {
                     "1 - Show pet nursery.\n" +
                             "2 - Add new pet in to the nursery \n" +
                             "3 - Add new command for the pet.\n" +
-                            "4 - Change date of pet from nursery.\n" +
+                            "4 - Change data of the pet from nursery.\n" +
                             "5 - Delete pet from nursery.\n" +
                             "6 - Exit without overwriting of the nursery data file \n" +
                             "7 - Exit and overwrite the nursery data file ");

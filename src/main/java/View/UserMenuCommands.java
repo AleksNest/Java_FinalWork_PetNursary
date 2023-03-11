@@ -60,7 +60,7 @@ public class UserMenuCommands {
                                     "2 - birthday \n" +
                                     "3 - Species.\n" +
                                     "4 - Commands.\n" +
-                                    "5 - to main menu...");
+                                    "5 - Exit to main menu...");
                     MenuTemplates.printMenuLine();
 
                     userSelection = scanner.next();
@@ -77,7 +77,6 @@ public class UserMenuCommands {
                         System.out.println("Input species: ");
                         String species = scanner.next();
 
-                        //animalList.get(positionAnimalToAnimalList).getCat();
 
                     } else if (userSelection.equals("4")) {
                         System.out.println("Input command for the pet: ");
@@ -150,7 +149,7 @@ public class UserMenuCommands {
 
                 System.out.println("Input command for animal");
                 ListOfCommands.add(scanner.next());
-                System.out.println("continue entering the commands? y/n");
+                System.out.println("Continue entering the commands? y/n");
                 if (!scanner.next().equals("y")) {
                     return ListOfCommands;
                 }
@@ -209,10 +208,10 @@ public class UserMenuCommands {
             MenuTemplates.printResponseTemplate("Pet nursery is empty");
 
         } else {
-            System.out.println("1 - Output out the entire pet nursery\n" +
-                    "2 - Output the pet by ID");
+            System.out.println("1 - Display all pet nursery\n" +
+                    "2 - Display the pet by ID");
             if (InputDataValidator.integerInput() == 1) {
-                MenuTemplates.printMenuTitle("composition of the pet nursery");
+                MenuTemplates.printMenuTitle("Composition of the pet nursery");
                 for (Animal animal : animalList) {
 
                     System.out.println(animal.toString());
@@ -394,7 +393,7 @@ public class UserMenuCommands {
 
             if (id >= 0 && id < nursery.getSizeOfAnimalList()) {
                 List<Animal> animalList = nursery.getAnimals();
-                System.out.println("Delete pet: " + animalList.get(id) + " from nursery?: y/n");
+                System.out.println("Delete pet: " + animalList.get(id) + "\nfrom nursery?: y/n");
                 if (scanner.next().equals("y")) {
                     animalList.remove(id);
                 }
