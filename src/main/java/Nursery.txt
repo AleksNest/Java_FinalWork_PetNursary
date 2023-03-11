@@ -1,0 +1,8 @@
+Cat 0 fffff 12-10-2025 ggg dddd
+Cat 0 Zeus 12-06-2016 British
+Dog 1 Toby 10-06-2016 doberman Pedigree fas look
+Hamster 2 Buddy 12-06-2016 sapphire run go lie
+Horse 3 Duke 10-01-2022 150 Anglo-Norm run stop
+Camel 4 Cooper 01-05-2020 200 1 sleep
+Donkey 5 Duke 01-03-2021 180 Abkhazian go
+Cat 6 Max 25-06-2017 lop-eared voice
